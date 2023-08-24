@@ -2,3 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+.blob {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 236, 242, 0.42)), to(#fbf1fa));
+    background-image: linear-gradient(180deg, rgba(249, 214, 236, 0.42), #d971a5);
+    mix-blend-mode: overlay;
+    left: 25%; /* Adjust this value to center the blob horizontally */
+    top: 50%; /* Adjust this value to center the blob vertically */
+    transform: translate(-50%, -50%);
+    border-radius: 76% 24% 33% 67% / 24% 76% 35% 65%; /* Set the final border-radius value */
+    animation: moveBlob 1.5s infinite alternate; /* Adjust the duration as needed */
+}
+
+@keyframes moveBlob {
+    0% {
+        transform: translate(-50%, -50%) translateX(-10px) translateY(-10px); /* Move up and left */
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(10px) translateY(10px); /* Move down and right */
+    }
+}
+
+.hover\:underline-after:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Adjust this value for the thickness of the underline */
+    background-color: #f87171; /* Use the pink-900 color */
+    position: absolute;
+    bottom: -2px; /* Adjust this value to control the distance between text and underline */
+    left: 0;
+  }
+  
+  
+  
+  
+  
+  
+  
