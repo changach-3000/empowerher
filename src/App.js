@@ -5,6 +5,9 @@ import Resources from "./pages/Resources";
 import NextSteps from "./pages/NextSteps";
 import Hospitals from "./pages/Hospitals";
 import Shelters from "./pages/Shelters";
+import {SimpleForm} from "./pages/Counselling";
+import Helpline from "./pages/Helpline";
+
 
 function App() {
   return (
@@ -17,6 +20,8 @@ function App() {
           <Route path="stories" element={<NextSteps />}/>
           <Route path="hospitals" element={<Hospitals/>}/>
           <Route path="shelters" element={<Shelters/>}/>
+          <Route path="counselling" element={<SimpleForm/>}/>
+          <Route path="helpline" element={<Helpline/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
