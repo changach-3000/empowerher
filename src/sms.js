@@ -1,7 +1,7 @@
 // Set your app credentials
 const credentials = {
-    apiKey: 'dd1d6a6bac2fbf043a4ead8f4642d001f73f8122773ce0e2609c64e8476d8f5b',
-    username: 'Plastic_On_The_Sofa',
+    apiKey: 'your_api_key',
+    username: 'your_username',
   }
 // Initialize the SDK
 const AfricasTalking = require('africastalking')(credentials);
