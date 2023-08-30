@@ -7,6 +7,8 @@ import Hospitals from "./pages/Hospitals";
 import Shelters from "./pages/Shelters";
 import {SimpleForm} from "./pages/Counselling";
 import Helpline from "./pages/Helpline";
+const path = require('path-browserify');
+
 
 
 function App() {
