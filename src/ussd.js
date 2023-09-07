@@ -37,7 +37,7 @@ app.post("/", (req, res) => {
   }
   else if (text === "1*1") {
     const accountNumber = "+254 727 900 800";
-    response = `Kindly contact this numberis ${accountNumber}`;
+    response = `END Kindly contact this numberis ${accountNumber}`;
   }
   else if (text === "1*2") {
     const accountNumber = "+254 727 900 800";
