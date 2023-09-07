@@ -7,6 +7,7 @@ import Hospitals from "./pages/Hospitals";
 import Shelters from "./pages/Shelters";
 import {SimpleForm} from "./pages/Counselling";
 import Helpline from "./pages/Helpline";
+import AboutUs from "./pages/AboutUs";
 const path = require('path-browserify');
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="shelters" element={<Shelters/>}/>
           <Route path="counselling" element={<SimpleForm/>}/>
           <Route path="helpline" element={<Helpline/>}/>
+          <Route path="about" element={<AboutUs/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
