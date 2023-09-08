@@ -9,6 +9,7 @@ import {SimpleForm} from "./pages/Counselling";
 import Helpline from "./pages/Helpline";
 import AboutUs from "./pages/AboutUs";
 import Login from "./AuthPages/Login"
+import SignUp from "./AuthPages/SignUp";
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login/>}></Route>
+          <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<LayoutPage/>}>
           <Route index element={<LandingPage/>}/>
           <Route path="resources" element={<Resources />}/>
