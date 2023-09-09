@@ -10,6 +10,7 @@ import Helpline from "./pages/Helpline";
 import AboutUs from "./pages/AboutUs";
 import Login from "./AuthPages/Login"
 import SignUp from "./AuthPages/SignUp";
+import PregJourney from "./pages/PregJourney";
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="counselling" element={<SimpleForm/>}/>
           <Route path="helpline" element={<Helpline/>}/>
           <Route path="about" element={<AboutUs/>}/>
+          <Route path="pregnancy" element={<PregJourney />}/>
           
           </Route>
         </Routes>
