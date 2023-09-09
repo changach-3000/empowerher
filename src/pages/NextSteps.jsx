@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function NextSteps() {
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
+  const toggleFormVisibility = () => {
+    setIsFormVisible(!isFormVisible);
+  };
+
   return (
     <>
       <style>
@@ -17,7 +24,7 @@ function NextSteps() {
               </h1>
               <h3 class="text-xl mb-5 font-light">
                 These are stories of girls who are going, or have gone through
-                what you are going through.You are not alone!
+                what you are going through. You are not alone!
               </h3>
               <div class="text-center mb-10">
                 <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
@@ -84,8 +91,9 @@ function NextSteps() {
                       When my parents knew I was pregnant, they threw me out of
                       the house.There I was, alone, pregnant, with no idea of a
                       way forward. I found this site and it helped me find out
-                      more about pregnancy,how to navigate it, as well as connect me to a shelters
-                      that took me in and took care of me.
+                      more about pregnancy,how to navigate it, as well as
+                      connect me to a shelters that took me in and took care of
+                      me.
                       <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -231,6 +239,77 @@ function NextSteps() {
           </div>
         </div>
       </div>
+
+      {isFormVisible ? (
+        <div className="fixed inset-0 flex items-center justify-center z-10 bg-gray-800 bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+         
+            <form className="h-full flex flex-col">
+              <div className="mb-4">
+                <label
+                  htmlFor="userName"
+                  className="inline-block mb-1 font-medium"
+                >
+                  Pseudo Name
+                </label>
+                <input
+                  placeholder="Jane Doe"
+                  required
+                  type="text"
+                  className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                  id="userName"
+                  name="userName"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label
+                  htmlFor="story"
+                  className="inline-block mb-1 font-medium"
+                >
+                  Story
+                </label>
+                <textarea
+                  placeholder="Add story here!"
+                  required
+                  type="text"
+                  className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                  id="text"
+                  name="text"
+                />
+              </div>
+              <div className="mt-4 mb-2 sm:mb-4">
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-pink-900 hover:bg-pink-600 focus:shadow-outline focus:outline-none"
+                >
+                  Add Story
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      ) : (
+        <button
+          onClick={toggleFormVisibility}
+          title="Add Story"
+          className="fixed bottom-10 right-10 bg-pink-900 h-10 px-5 m-2 rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-pink-400 hover:drop-shadow-2xl duration-300 font-light"
+        >
+          Add Story
+          <svg
+            className="w-5 h-5 ml-2 -mr-1"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+      )}
     </>
   );
 }
