@@ -14,6 +14,7 @@ import PregJourney from "./pages/PregJourney";
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,7 @@ function App() {
           <Route path="helpline" element={<Helpline/>}/>
           <Route path="about" element={<AboutUs/>}/>
           <Route path="pregnancy" element={<PregJourney />}/>
+         
           
           </Route>
         </Routes>
