@@ -11,14 +11,16 @@ function Resources() {
         </h1>
         <h3 class="mb-3 font-light">
           Welcome to our world of resources, where warmth and support are always
-          on the menu! 🌟 
-          <br/>We're thrilled to provide you with a diverse range of
-          valuable tools and guidance to make your journey smoother and
-          brighter. Picture us as your friendly guides on this adventure,
-          offering you a comforting hand along the way. 
-          <br/>Our extensive resources
-          cover a multitude of topics, from pregnancy to parenting, sexual
-          health to family planning, adoption to counseling, and so much more.
+          on the menu! 🌟
+          <br />
+          We're thrilled to provide you with a diverse range of valuable tools
+          and guidance to make your journey smoother and brighter. Picture us as
+          your friendly guides on this adventure, offering you a comforting hand
+          along the way.
+          <br />
+          Our extensive resources cover a multitude of topics, from pregnancy to
+          parenting, sexual health to family planning, adoption to counseling,
+          and so much more.
         </h3>
         <div class="text-center mb-1">
           <span class="inline-block w-1 h-1 rounded-full bg-pink-900 ml-1"></span>
@@ -56,9 +58,12 @@ function Resources() {
                         answers to any questions you might have.
                       </p>
                       <div className="card-actions">
-                      <Link to="/pregnancy"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
-                          See More
-                        </button></Link>
+                        <Link to="/pregnancy">
+                          {" "}
+                          <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                            See More
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -82,9 +87,12 @@ function Resources() {
                       appointments and arranging checkups.
                     </p>
                     <div className="card-actions">
-                    <Link to="/hospitals"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                      <Link to="/hospitals">
+                        {" "}
+                        <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
                           See More
-                        </button></Link>
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -111,9 +119,12 @@ function Resources() {
                       of emergencies.
                     </p>
                     <div className="card-actions">
-                    <Link to="/shelters"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                      <Link to="/shelters">
+                        {" "}
+                        <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
                           See More
-                        </button></Link>
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -195,11 +206,43 @@ function Resources() {
                       toward a brighter, more fulfilling future
                     </p>
                     <div className="card-actions">
-                    <Link to="/counselling"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                      <Link to="/counselling">
+                        {" "}
+                        <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
                           See More
-                        </button></Link>
+                        </button>
+                      </Link>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            {/*extra card */}
+            <div className="card w-96 bg-base-100 shadow">
+              <figure className="px-10 pt-10">
+                <img
+                  src="https://globetechcdn.com/mobile_hospimedica/images/stories/articles/article_images/2021-11-13/SDD-294790485.jpg"
+                  alt="stories"
+                  className="rounded-xl"
+                />
+              </figure>
+              <div className="card-body items-center text-center mt-3 border-t border-pink-900">
+                <h2 className="card-title text-xl text-pink-900">Stories</h2>
+                <p className="font-light">
+                  These narratives feature courageous young women who have faced
+                  similar trials in life. They've graciously shared their
+                  experiences to uplift and inspire others, serving as beacons
+                  of hope. If you have a story to share, you're more than
+                  welcome to join in! Our aim is to provide you with
+                  encouragement to persevere
+                </p>
+                <div className="card-actions">
+                  <Link to="/stories">
+                    {" "}
+                    <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                      See More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
