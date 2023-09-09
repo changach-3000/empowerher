@@ -1,61 +1,213 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Resources() {
   return (
-    <section class="bg-pink-200 dark:bg-gray-900 h-screen">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-md mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-pink-900 dark:text-white">So you think you're pregnant?</h2>
-            <p class="text-gray-500 sm:text-xl dark:text-gray-400">If this question has brought you here, don't worry, bacuse we've got you! We offer you great support and resources to help you make decisions on what you want to do next</p>
+    <div className="bg-pink-200">
+      {/* Section with cards showing resources */}
+      <div class="text-center max-w-xl mx-auto">
+        <h1 class="text-6xl md:text-7xl font-bold mb-5 text-pink-900 py-4">
+          RESOURCES
+        </h1>
+        <h3 class="mb-3 font-light">
+          Welcome to our world of resources, where warmth and support are always
+          on the menu! 🌟 
+          <br/>We're thrilled to provide you with a diverse range of
+          valuable tools and guidance to make your journey smoother and
+          brighter. Picture us as your friendly guides on this adventure,
+          offering you a comforting hand along the way. 
+          <br/>Our extensive resources
+          cover a multitude of topics, from pregnancy to parenting, sexual
+          health to family planning, adoption to counseling, and so much more.
+        </h3>
+        <div class="text-center mb-1">
+          <span class="inline-block w-1 h-1 rounded-full bg-pink-900 ml-1"></span>
+          <span class="inline-block w-3 h-1 rounded-full bg-pink-900 ml-1"></span>
+          <span class="inline-block w-40 h-1 rounded-full bg-pink-900"></span>
+          <span class="inline-block w-3 h-1 rounded-full bg-pink-900 ml-1"></span>
+          <span class="inline-block w-1 h-1 rounded-full bg-pink-900 ml-1"></span>
         </div>
-        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+      </div>
+      <div className="min-w-screen min-h-screen bg-pink-200 flex items-center justify-center py-5 ">
+        <div class="w-full px-5 py-16 md:py-24">
+          <div class="w-full max-w-6xl mx-auto">
+            <div class="-mx-3 md:flex items-start">
+              <div class="px-1 md:w-1/2">
+                <div className="card w-96 bg-base-100 gap-4 mx-4 mb-4">
+                  {/* card 1 */}
+                  <div className="card w-96 bg-base-100 shadow">
+                    <figure className="px-10 pt-10">
+                      <img
+                        src="preggirl.png"
+                        alt="pregnancy journey"
+                        className="rounded-xl"
+                      />
+                    </figure>
+                    <div className="card-body items-center text-center mt-3 border-t border-pink-900">
+                      <h2 className="card-title text-xl text-pink-900">
+                        Pregnancy Journey
+                      </h2>
+                      <p className="font-light">
+                        Explore the entire pregnancy journey, beginning with
+                        pregnancy testing and hospital checkups.
+                        <br /> Learn about common symptoms, understand the
+                        different trimesters, discover suitable dietary choices,
+                        explore exercise options, and engage with our AI bot for
+                        answers to any questions you might have.
+                      </p>
+                      <div className="card-actions">
+                      <Link to="/pregnancy"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                          See More
+                        </button></Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-               <a href='https://www.plannedparenthood.org/learn/pregnancy' target="_blank" > <h3 class="mb-2 text-xl font-bold dark:text-white text-pink-900">Pregnancy Journey</h3></a>
-                <p class="text-gray-500 dark:text-gray-400">Let's get to see what stage you are at, and how you can proceed learning the specific routines you need to follow with regards to diet, exercise and general body wellness for you and your baby</p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
+                {/* card 2 */}
+                <div className="card w-96 bg-base-100 shadow">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg?w=2000"
+                      alt="hospitals"
+                      className="rounded-xl"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center mt-3 border-t border-pink-900">
+                    <h2 className="card-title text-xl text-pink-900">
+                      Hospitals
+                    </h2>
+                    <p className="font-light">
+                      Discover nearby hospitals providing maternal care services
+                      and access their contact information for scheduling
+                      appointments and arranging checkups.
+                    </p>
+                    <div className="card-actions">
+                    <Link to="/hospitals"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                          See More
+                        </button></Link>
+                    </div>
+                  </div>
                 </div>
-              <Link to="/hospitals">  <h3 class="mb-2 text-xl font-bold dark:text-white text-pink-900">Hospitals</h3></Link>
-                <p class="text-gray-500 dark:text-gray-400">Get to see the hospitals around you for when you need to go for checkups.</p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>                    
+              </div>
+              {/* card 3 */}
+              <div class="px-1 md:w-1/2">
+                <div className="card w-96 bg-base-100 shadow">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2016_48/1816276/gettyimages-539594788.jpg"
+                      alt="shelters"
+                      className="rounded-xl"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center mt-3 border-t border-pink-900">
+                    <h2 className="card-title text-xl text-pink-900">
+                      Shelters
+                    </h2>
+                    <p className="font-light">
+                      Locate shelters in your vicinity that provide care and
+                      protection for teenage mothers who may require alternative
+                      accommodations. Our platform facilitates contact with
+                      these shelters, ensuring you can reach out to them in case
+                      of emergencies.
+                    </p>
+                    <div className="card-actions">
+                    <Link to="/shelters"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                          See More
+                        </button></Link>
+                    </div>
+                  </div>
                 </div>
-               <Link to="/shelters"> <h3 class="mb-2 text-xl font-bold dark:text-white text-pink-900">Shelters</h3></Link>
-                <p class="text-gray-500 dark:text-gray-400">If your family situation is not condusive for your current situation, find some shelters around you that can help you.</p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
+                {/* card4 */}
+                <div className="card w-96 bg-base-100 shadow">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src="https://img.freepik.com/free-vector/family-planning-abstract-illustration_335657-5257.jpg"
+                      alt="family planning and sexual education"
+                      className="rounded-xl"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center mt-3 border-t border-pink-900">
+                    <h2 className="card-title text-xl text-pink-900">
+                      Family Planning and Sexual Education
+                    </h2>
+                    <p className="font-light">
+                      Gain valuable insights into your sexual health and
+                      reproductive knowledge from experienced professionals.
+                      Explore comprehensive information on family planning and
+                      the various options available to empower yourself with
+                      better preparation and knowledge.
+                    </p>
+                    <div className="card-actions">
+                      <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                        See More
+                      </button>
+                    </div>
+                  </div>
                 </div>
-               <a href='https://mumsvillage.com/pregnancy-parenting/serah-adoption-agencies-kenya/' target='blank'><h3 class="mb-2 text-xl font-bold dark:text-white text-pink-900">Adoption Agencies</h3></a>
-                <p class="text-gray-500 dark:text-gray-400">These are vetted adoption agencies that are guaranteed to take great care of your child in the event that you are not able to care for your child.</p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+              </div>
+              {/* card 5 */}
+              <div class="px-1 md:w-1/2">
+                <div className="card w-96 bg-base-100 shadow">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src="https://img.freepik.com/premium-vector/mom-with-kid-adoption_24911-68486.jpg?w=2000"
+                      alt="Adoption"
+                      className="rounded-xl"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center mt-3 border-t border-pink-900">
+                    <h2 className="card-title text-xl text-pink-900">
+                      Adoption Agencies
+                    </h2>
+                    <p className="font-light">
+                      Discover the transformative journey of adoption, where
+                      love creates families. Explore the process, support, and
+                      stories that make adoption a beautiful choice. We also
+                      offer connections to adoption agencies in situations where
+                      you are unable to care for your child, ensuring a caring
+                      and supportive path forward.
+                    </p>
+                    <div className="card-actions">
+                      <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                        See More
+                      </button>
+                    </div>
+                  </div>
                 </div>
-               <Link to="/counselling"> <h3 class="mb-2 text-xl font-bold dark:text-white text-pink-900">Counselling</h3></Link>
-                <p class="text-gray-500 dark:text-gray-400">Learn how you can be better prepared for situations later on in life.</p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                {/* card 6 */}
+                <div className="card w-96 bg-base-100 shadow">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src="https://counsellingskillsacademy.com/wp-content/uploads/2022/01/Two-people-talking-02-800-x-500-px.png"
+                      alt="Counselling"
+                      className="rounded-xl"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center mt-3 border-t border-pink-900">
+                    <h2 className="card-title text-xl text-pink-900">
+                      Counselling
+                    </h2>
+                    <p className="font-light">
+                      Embark on a journey of healing and self-discovery through
+                      our counseling services. We're here to provide unwavering
+                      support throughout the entire process, connecting you with
+                      compassionate professional counselors who can guide you
+                      toward a brighter, more fulfilling future
+                    </p>
+                    <div className="card-actions">
+                    <Link to="/counselling"> <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                          See More
+                        </button></Link>
+                    </div>
+                  </div>
                 </div>
-               <a href='https://www.plannedparenthood.org/learn/health-and-wellness/sexual-and-reproductive-anatomy' target='blank'><h3 class="mb-2 text-xl font-bold dark:text-white text-pink-900">Sexual Education & family planning</h3></a>
-                <p class="text-gray-500 dark:text-gray-400">You can get information about your sexual health, learn more about your body, how to take care of it and learn more on sexual education.</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-  </section>
-  )
+  );
 }
 
-export default Resources
+export default Resources;
