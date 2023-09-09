@@ -58,12 +58,12 @@ function Resources() {
                         answers to any questions you might have.
                       </p>
                       <div className="card-actions">
-                        <Link to="/pregnancy">
+                        <a href="https://www.plannedparenthood.org/learn/pregnancy" target="blank">
                           {" "}
                           <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
                             See More
                           </button>
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </div>
