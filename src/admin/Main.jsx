@@ -7,43 +7,43 @@ function Main() {
 
   const data = [
     {
-      name: 'Page A',
+      name: 'January',
       uv: 4000,
       pv: 2400,
       amt: 2400,
     },
     {
-      name: 'Page B',
+      name: 'February',
       uv: 3000,
       pv: 1398,
       amt: 2210,
     },
     {
-      name: 'Page C',
+      name: 'March',
       uv: 2000,
       pv: 9800,
       amt: 2290,
     },
     {
-      name: 'Page D',
+      name: 'April',
       uv: 2780,
       pv: 3908,
       amt: 2000,
     },
     {
-      name: 'Page E',
+      name: 'May',
       uv: 1890,
       pv: 4800,
       amt: 2181,
     },
     {
-      name: 'Page F',
+      name: 'June',
       uv: 2390,
       pv: 3800,
       amt: 2500,
     },
     {
-      name: 'Page G',
+      name: 'July',
       uv: 3490,
       pv: 4300,
       amt: 2100,
@@ -92,7 +92,7 @@ function Main() {
 
       {/* Main */}
      {/* Main */}
-     <main className="main-container">
+     <main className="main-container py-5">
           <div className="main-title">
             <p className="font-bold">DASHBOARD</p>
           </div>
@@ -102,21 +102,28 @@ function Main() {
               <p className="text-primary">USERS</p>
               <span className="material-icons-outlined text-blue">person</span>
             </div>
-            <span className="text-primary font-bold">249</span>
+            <span className="text-pink-900 font-bold ">249</span>
           </div>
           <div className="card">
             <div className="card-inner">
               <p className="text-primary">DONATIONS</p>
               <span className="material-icons-outlined text-orange">money</span>
             </div>
-            <span className="text-primary font-bold">83</span>
+            <span className="text-pink-900 font-bold">KES 1,000,000</span>
           </div>
           <div className="card">
             <div className="card-inner">
-              <p className="text-primary">SALES ORDERS</p>
+              <p className="text-primary">HOSPITALS AND SHELTERS</p>
               <span className="material-icons-outlined text-green">shopping_cart</span>
             </div>
-            <span className="text-primary font-bold">79</span>
+            <span className="text-pink-900 font-bold">79</span>
+          </div>
+          <div className="card">
+            <div className="card-inner">
+              <p className="text-primary">COUNCELLORS</p>
+              <span className="material-icons-outlined text-green">shopping_cart</span>
+            </div>
+            <span className="text-pink-900 font-bold">20</span>
           </div>
         </div>
 
@@ -138,8 +145,8 @@ function Main() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="pv" fill="#8884d8" />
-                <Bar dataKey="uv" fill="#82ca9d" />
+                <Bar dataKey="pv" fill="#831843" />
+                <Bar dataKey="uv" fill="#fbcfe8" />
                 </BarChart>
             </ResponsiveContainer>
 
@@ -160,8 +167,8 @@ function Main() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="pv" stroke="#831843" activeDot={{ r: 8 }} />
+                <Line type="monotone" dataKey="uv" stroke="#fbcfe8" />
                 </LineChart>
             </ResponsiveContainer>
 
