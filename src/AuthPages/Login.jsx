@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 function Login() {
+  const {login} = useContext(AuthContext)
+
+  const [username, setUsername] = useState()
+  const [password, setPassword] = useState()
+
+  const handleSubmit = (e) => {
+      e.preventDefault()
+      login(username,password)
+      setPassword("")
+      setUsername("")
+   }
+
+
   return (
     <div className="relative h-screen overflow-hidden">
       <video
@@ -40,7 +54,7 @@ function Login() {
                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                   Login
                 </h3>
-                <form className="h-full flex flex-col">
+                <form className="h-full flex flex-col" onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label
                       htmlFor="userName"
@@ -55,6 +69,7 @@ function Login() {
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                       id="userName"
                       name="userName"
+                      onChange={(e)=> setUsername(e.target.value)} 
                     />
                   </div>
 
@@ -72,6 +87,7 @@ function Login() {
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                       id="pwd"
                       name="password"
+                      onChange={(e)=> setPassword(e.target.value)} 
                     />
                   </div>
                   <div className="mt-4 mb-2 sm:mb-4">
