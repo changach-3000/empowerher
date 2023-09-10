@@ -35,9 +35,9 @@ function Resources() {
           <div class="w-full max-w-6xl mx-auto">
             <div class="-mx-3 md:flex items-start">
               <div class="px-1 md:w-1/2">
-                <div className="card w-96 bg-base-100 gap-4 mx-4 mb-4">
+                <div className=" w-96 bg-base-100 gap-4 mx-4 mb-4">
                   {/* card 1 */}
-                  <div className="card w-96 bg-base-100 shadow">
+                  <div className=" w-96 bg-base-100 shadow">
                     <figure className="px-10 pt-10">
                       <img
                         src="preggirl.png"
@@ -69,7 +69,7 @@ function Resources() {
                   </div>
                 </div>
                 {/* card 2 */}
-                <div className="card w-96 bg-base-100 shadow">
+                <div className="w-96 bg-base-100 shadow">
                   <figure className="px-10 pt-10">
                     <img
                       src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg?w=2000"
@@ -99,7 +99,7 @@ function Resources() {
               </div>
               {/* card 3 */}
               <div class="px-1 md:w-1/2">
-                <div className="card w-96 bg-base-100 shadow">
+                <div className="w-96 bg-base-100 shadow">
                   <figure className="px-10 pt-10">
                     <img
                       src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2016_48/1816276/gettyimages-539594788.jpg"
@@ -129,7 +129,7 @@ function Resources() {
                   </div>
                 </div>
                 {/* card4 */}
-                <div className="card w-96 bg-base-100 shadow">
+                <div className="w-96 bg-base-100 shadow">
                   <figure className="px-10 pt-10">
                     <img
                       src="https://img.freepik.com/free-vector/family-planning-abstract-illustration_335657-5257.jpg"
@@ -158,7 +158,7 @@ function Resources() {
               </div>
               {/* card 5 */}
               <div class="px-1 md:w-1/2">
-                <div className="card w-96 bg-base-100 shadow">
+                <div className="w-96 bg-base-100 shadow">
                   <figure className="px-10 pt-10">
                     <img
                       src="https://img.freepik.com/premium-vector/mom-with-kid-adoption_24911-68486.jpg?w=2000"
@@ -186,7 +186,7 @@ function Resources() {
                   </div>
                 </div>
                 {/* card 6 */}
-                <div className="card w-96 bg-base-100 shadow">
+                <div className="w-96 bg-base-100 shadow">
                   <figure className="px-10 pt-10">
                     <img
                       src="https://counsellingskillsacademy.com/wp-content/uploads/2022/01/Two-people-talking-02-800-x-500-px.png"
@@ -218,7 +218,7 @@ function Resources() {
               </div>
             </div>
             {/*extra card */}
-            <div className="card w-96 bg-base-100 shadow">
+            <div className="w-96 bg-base-100 shadow">
               <figure className="px-10 pt-10">
                 <img
                   src="https://globetechcdn.com/mobile_hospimedica/images/stories/articles/article_images/2021-11-13/SDD-294790485.jpg"
