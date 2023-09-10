@@ -11,6 +11,9 @@ import AboutUs from "./pages/AboutUs";
 import Login from "./AuthPages/Login"
 import SignUp from "./AuthPages/SignUp";
 import PregJourney from "./pages/PregJourney";
+import { AuthProvider } from "./context/AuthContext";
+import AdminLayout from "./admin/AdminLayout";
+import Main from "./admin/Main";
 
 
 
@@ -19,8 +22,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <AuthProvider>
         <Routes>
-          <Route path="/login" element={<Login/>}></Route>
+          <Route path="/dashboard" element={<Main/> }>
+            <Route index element={<Main />}/>
+          </Route>
+          <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<LayoutPage/>}>
           <Route index element={<LandingPage/>}/>
@@ -32,10 +39,9 @@ function App() {
           <Route path="helpline" element={<Helpline/>}/>
           <Route path="about" element={<AboutUs/>}/>
           <Route path="pregnancy" element={<PregJourney />}/>
-         
-          
           </Route>
         </Routes>
+        </AuthProvider>
       </BrowserRouter>
     </div>
   );
