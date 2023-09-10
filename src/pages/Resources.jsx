@@ -149,9 +149,9 @@ function Resources() {
                       better preparation and knowledge.
                     </p>
                     <div className="card-actions">
-                      <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                   <a href="https://www.plannedparenthood.org/learn/birth-control" > <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
                         See More
-                      </button>
+                      </button></a>
                     </div>
                   </div>
                 </div>
@@ -179,9 +179,9 @@ function Resources() {
                       and supportive path forward.
                     </p>
                     <div className="card-actions">
-                      <button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
+                     <a href="https://mumsvillage.com/pregnancy-parenting/serah-adoption-agencies-kenya/" ><button className="btn bg-pink-900 text-pink-200 rounded-full h-10 px-5 m-2 ">
                         See More
-                      </button>
+                      </button></a>
                     </div>
                   </div>
                 </div>
