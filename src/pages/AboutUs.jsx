@@ -54,12 +54,12 @@ function AboutUs() {
                 />
               </svg>
             </a>
-            <a
-              href="#resources"
+            <Link 
+              to="/signup"
               className="z-10 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-pink-900 border border-pink-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
-              Go to site
-            </a>
+              Sign Up
+            </Link>
           </div>
         </div>
       </section>
