@@ -14,6 +14,8 @@ import PregJourney from "./pages/PregJourney";
 import { AuthProvider } from "./context/AuthContext";
 import AdminLayout from "./admin/AdminLayout";
 import Main from "./admin/Main";
+import Gpt from "./pages/Gpt";
+import Donations from "./pages/Donations";
 
 
 
@@ -39,6 +41,8 @@ function App() {
           <Route path="helpline" element={<Helpline/>}/>
           <Route path="about" element={<AboutUs/>}/>
           <Route path="pregnancy" element={<PregJourney />}/>
+          <Route path="gpt" element={<Gpt/>}/>
+          <Route path= "donate" element={<Donations/>}/>
           </Route>
         </Routes>
         </AuthProvider>
