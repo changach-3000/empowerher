@@ -114,14 +114,14 @@ function Main() {
           <div className="card">
             <div className="card-inner">
               <p className="text-primary">HOSPITALS AND SHELTERS</p>
-              <span className="material-icons-outlined text-green">shopping_cart</span>
+              <span className="material-icons-outlined text-green">home</span>
             </div>
             <span className="text-pink-900 font-bold">79</span>
           </div>
           <div className="card">
             <div className="card-inner">
-              <p className="text-primary">COUNCELLORS</p>
-              <span className="material-icons-outlined text-green">shopping_cart</span>
+              <p className="text-primary">COUNSELLORS</p>
+              <span className="material-icons-outlined text-green">person</span>
             </div>
             <span className="text-pink-900 font-bold">20</span>
           </div>
