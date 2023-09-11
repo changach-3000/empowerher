@@ -78,8 +78,7 @@
 
 .header{
   grid-area: header;
-  height: 70px;
-  background-color: #ffffff;   
+  height: 70px;   
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,8 +90,7 @@
 #sidebar{
   grid-area: sidebar;
   height: 100%;
-  background-color: #21232d;
-  color: #9799ab;
+  color:#d2d2d3;
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition:all 0.5s ;
