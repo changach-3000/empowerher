@@ -1,7 +1,20 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 function Donations() {
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+       
+        Swal.fire({
+          icon: 'success',
+          title: 'Thank you for your donation!',
+          text: 'Your donation has been well received.',
+        });
+        e.target.reset();
+      };
+
   return (
     <div className="relative h-screen overflow-hidden">
       <video
@@ -42,7 +55,7 @@ function Donations() {
                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                   DONATE
                 </h3>
-                <form className="h-full flex flex-col">
+                <form className="h-full flex flex-col" onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label
                       htmlFor="userName"
