@@ -245,8 +245,17 @@ function Resources() {
                   </Link>
                 </div>
               </div>
+
             </div>
           </div>
+          <button
+
+          title="chatbot"
+          className="fixed bottom-10 right-10 h-10 px-5 m-2  drop-shadow-lg flex justify-center items-center  hover:drop-shadow-2xl duration-300 font-light"
+        >
+          <img width="120" height="120" src="https://uploads-ssl.webflow.com/5e71ed18ed23ac1f5bb16bc5/6203d4348e557b73336567ae_C%20%E2%80%93%20Was%20ist%20ein%20Chatbot_%20(Head-Grafik).svg" alt="bot"/>
+         
+        </button>
         </div>
       </div>
     </div>
