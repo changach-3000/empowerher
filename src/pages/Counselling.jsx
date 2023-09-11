@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import ChatBot from "react-simple-chatbot";
 import PropTypes from "prop-types";
+import Swal from 'sweetalert2';
 
 class Review extends Component {
   constructor(props) {
@@ -56,6 +57,9 @@ Review.defaultProps = {
 };
 
 export const SimpleForm = () => {
+  
+ 
+
   const [chatVisible, setChatVisible] = useState(false);
 
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -67,7 +71,17 @@ export const SimpleForm = () => {
   const handleChatToggle = () => {
     setChatVisible((prevState) => !prevState);
   };
-
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+   
+    Swal.fire({
+      icon: 'success',
+      title: 'Booking Received',
+      text: 'Thank you for booking a session, we will reach out to you for further instructions.',
+    });
+    e.target.reset();
+  
+  };
   return (
     <>
       <section class="bg-pink-200 h-screen dark:bg-gray-900">
@@ -204,7 +218,7 @@ export const SimpleForm = () => {
       {isFormVisible ? (
         <div className="fixed inset-0 flex items-center justify-center z-10 bg-gray-800 bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <form className="h-full flex flex-col">
+            <form className="h-full flex flex-col" onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label
                   htmlFor="doctorName"
@@ -263,7 +277,7 @@ export const SimpleForm = () => {
                   type="submit"
                   className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-pink-900 hover:bg-pink-600 focus:shadow-outline focus:outline-none"
                 >
-                  Add Story
+                  Book Session
                 </button>
               </div>
             </form>
