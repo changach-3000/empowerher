@@ -86,7 +86,7 @@ function NavBar() {
                       Resources
                     </Link>
                     <Link
-                      to="/donations"
+                      to="/donate"
                       className="text-pink-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                     >
                       Donate
