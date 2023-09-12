@@ -46,7 +46,7 @@ function NextSteps() {
                     </div>
                     <div class="flex-grow pl-3">
                       <h6 class="font-bold text-sm uppercase text-gray-600">
-                        Neema Wakio
+                        user2
                       </h6>
                     </div>
                   </div>
@@ -79,7 +79,7 @@ function NextSteps() {
                     </div>
                     <div class="flex-grow pl-3">
                       <h6 class="font-bold text-sm uppercase text-gray-600">
-                        Sharon Wangui.
+                        user3
                       </h6>
                     </div>
                   </div>
@@ -112,7 +112,7 @@ function NextSteps() {
                     </div>
                     <div class="flex-grow pl-3">
                       <h6 class="font-bold text-sm uppercase text-gray-600">
-                        Teresia Wanjiru.
+                        user5
                       </h6>
                     </div>
                   </div>
@@ -146,7 +146,7 @@ function NextSteps() {
                     </div>
                     <div class="flex-grow pl-3">
                       <h6 class="font-bold text-sm uppercase text-gray-600">
-                        Emily
+                        user7
                       </h6>
                     </div>
                   </div>
@@ -179,7 +179,7 @@ function NextSteps() {
                     </div>
                     <div class="flex-grow pl-3">
                       <h6 class="font-bold text-sm uppercase text-gray-600">
-                        Nevada
+                        user3
                       </h6>
                     </div>
                   </div>
@@ -213,7 +213,7 @@ function NextSteps() {
                     </div>
                     <div class="flex-grow pl-3">
                       <h6 class="font-bold text-sm uppercase text-gray-600">
-                        Felicity.
+                      user8
                       </h6>
                     </div>
                   </div>
